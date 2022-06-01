@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.tog{
+    width: 200vh;
+height: 100vh;
+    background-color: rgb(36, 57, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.moon{
+    width: 330px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position:absolute;
+    top: 300px;
+    box-shadow: 0 0 15px 60px rgba(240, 248, 255, 0.644), 0 0 15px 150px rgba(240, 248, 255, 0.384), 0 0 15px 250px rgba(240, 248, 255, 0.199), 0 0 15px 350px rgba(240, 248, 255, 0.096), 0 0 15px 450px rgba(240, 248, 255, 0.041);
+}
+.mt1{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(35, 50, 77);
+    transform: rotate(45deg);
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    bottom: -450px;
+    box-shadow: 0 0 15px 2px black;
+}
+.mt2{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(30, 41, 63);
+    transform: rotate(45deg);
+    border-radius: 5%;
+    position: absolute;
+    z-index: 2;
+    bottom: -550px;
+    left: 400px;
+    box-shadow: 0 0 15px 2px black;
+}
+.mt3{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(25, 38, 63);
+    transform: rotate(45deg);
+    border-radius: 5%;
+    position: absolute;
+    z-index: 3;
+    bottom: -600px;
+    left: 800px;
+    box-shadow: 0 0 15px 2px black;
+}
+.star{
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(0 20%, 39% 42%, 50% 0, 60% 41%, 100% 20%, 71% 53%, 100% 82%, 61% 68%, 53% 100%, 40% 69%, 0 84%, 30% 56%);
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    animation-name: stars;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.s1{
+    top: 80px;
+    left: 80px;
+}
+.s2{
+    top: 220px;
+    left: 220px;
+}
+.s3{
+    top: 350px;
+    left: 450px;
+}
+.s4{
+    top: 80px;
+    left: 370px;
+}
+.s5{
+    top: 400px;
+    left: 90px;
+}
+.s6{
+    top: 500px;
+    left: 280px;
+}
+.s7{
+    top: 150px;
+    left: 600px;
+}
+.s8{
+    top: 700px;
+    left: 80px;
+}
+.s9{
+    top: 750px;
+    left: 350px;
+}
+.s10{
+    top: 60px;
+    left: 800px;
+}
+.s11{
+    top: 80px;
+    right: 80px;
+}
+.s12{
+    top: 220px;
+    right: 220px;
+}
+.s13{
+    top: 350px;
+    right: 450px;
+}
+.s14{
+    top: 80px;
+    right: 370px;
+}
+.s15{
+    top: 400px;
+    right: 90px;
+}
+.s16{
+    top: 500px;
+    right: 280px;
+}
+.s17{
+    top: 150px;
+    right: 600px;
+}
+.s18{
+    top: 700px;
+    right: 80px;
+}
+.s19{
+    top: 750px;
+    right: 350px;
+}
+.s20{
+    top: 60px;
+    right: 800px;
+}
+@keyframes stars{
+    0%{
+        transform: translate(0 0);
+    }
+    100%{
+        transform: translate(100px 100px);
+    }
+}
